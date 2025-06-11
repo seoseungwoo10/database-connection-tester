@@ -1,6 +1,5 @@
 package com.example.dbtester.service;
 
-
 import com.example.dbtester.config.DatabaseConfig;
 import com.example.dbtester.model.DatabaseConnection;
 import com.zaxxer.hikari.HikariConfig;
@@ -164,21 +163,33 @@ public class DatabaseService {
         }
     }
 
+    /**
+     * 스프링부트 기반 프로그램 내에서 JDBC 파일로딩 방식을 정상작동하지 않음
+      * @param dbConfig
+     * @return
+     */
+/*
     private HikariDataSource createDataSource(DatabaseConnection dbConfig) {
+
         String jarPath = databaseConfig.getDriverPath() + "/" + dbConfig.getJarFile();
         ClassLoader originalClassLoader = Thread.currentThread().getContextClassLoader();
+
         try {
+
             File jarFile = new File(jarPath);
             if (!jarFile.exists() || !jarFile.isFile()) {
                 logger.error("JDBC 드라이버 JAR 파일을 찾을 수 없습니다: {}", jarPath);
                 throw new RuntimeException("JDBC 드라이버 JAR 파일을 찾을 수 없습니다: " + jarPath);
             }
+
             URL jarUrl = jarFile.toURI().toURL();
             URLClassLoader classLoader = new URLClassLoader(new URL[]{jarUrl}, originalClassLoader);
             Class.forName(dbConfig.getOriginalClassName(), true, classLoader);
             logger.info("JDBC 드라이버 로드 성공: {}", dbConfig.getOriginalClassName());
             Thread.currentThread().setContextClassLoader(classLoader);
             System.out.println("Thread Context ClassLoader를 customClassLoader로 설정했습니다.");
+
+
             HikariConfig config = new HikariConfig();
             config.setDriverClassName(dbConfig.getDriverClassName());
             config.setJdbcUrl(dbConfig.getJdbcUrl());
@@ -190,13 +201,42 @@ public class DatabaseService {
             config.setIdleTimeout(600000);
             config.setMaxLifetime(1800000);
             HikariDataSource ds = new HikariDataSource(config);
+
             // HikariDataSource 생성 후에만 원래의 ClassLoader로 복원
             Thread.currentThread().setContextClassLoader(originalClassLoader);
             return ds;
         } catch (ClassNotFoundException e) {
             logger.error("JDBC 드라이버 로드 실패: {}", e.getMessage());
             throw new RuntimeException("JDBC 드라이버를 찾을 수 없습니다: " + dbConfig.getDriverClassName(), e);
-        } catch (MalformedURLException e) {
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
+*/
+
+    /**
+     * pom.xml 에 JDBC 드라이버를 추가하거나,
+     * -Dloader.path=libs/driver.jar 옵션을 통해 JDBC 드라이버를 로드할 수 있습니다.
+     * @param dbConfig
+     * @return
+     */
+    private HikariDataSource createDataSource(DatabaseConnection dbConfig) {
+
+        try {
+            HikariConfig config = new HikariConfig();
+            config.setDriverClassName(dbConfig.getDriverClassName());
+            config.setJdbcUrl(dbConfig.getJdbcUrl());
+            config.setUsername(dbConfig.getUsername());
+            config.setPassword(dbConfig.getPassword());
+            config.setMaximumPoolSize(5);
+            config.setMinimumIdle(1);
+            config.setConnectionTimeout(30000);
+            config.setIdleTimeout(600000);
+            config.setMaxLifetime(1800000);
+            config.setConnectionTestQuery("SELECT 1");
+            HikariDataSource ds = new HikariDataSource(config);
+            return ds;
+        } catch (Exception e) {
             throw new RuntimeException(e);
         }
     }

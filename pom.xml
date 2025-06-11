@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.seungwoo</groupId>
     <artifactId>database-connection-tester</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1</version>
     <name>database-connection-tester</name>
     <description>database-connection-tester</description>
     <url/>
@@ -51,7 +51,14 @@
             <version>1.16</version>
         </dependency>
 
-<!--        <dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+<!--
+        <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
             <version>42.7.3</version>
@@ -60,7 +67,8 @@
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <version>8.0.21</version>
-        </dependency>-->
+        </dependency>
+-->
 
         <!-- SLF4J and Logback -->
         <dependency>
@@ -97,6 +105,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
+                    <layout>ZIP</layout>
                     <excludes>
                         <exclude>
                             <groupId>org.projectlombok</groupId>

@@ -1,50 +1,20 @@
-2025-06-04 21:57:47.580 [main] INFO  c.e.dbtester.DBTesterApplication - Starting DBTesterApplication using Java 17.0.7 with PID 44420 (C:\03_sources\seoseungwoo10_srcs\database-connection-tester\target\classes started by kangchun in C:\03_sources\seoseungwoo10_srcs\database-connection-tester)
-2025-06-04 21:57:47.581 [main] DEBUG c.e.dbtester.DBTesterApplication - Running with Spring Boot v3.5.0, Spring v6.2.7
-2025-06-04 21:57:47.582 [main] INFO  c.e.dbtester.DBTesterApplication - No active profile set, falling back to 1 default profile: "default"
-2025-06-04 21:57:48.291 [main] INFO  c.e.dbtester.DBTesterApplication - Started DBTesterApplication in 1.388 seconds (process running for 2.484)
-2025-06-04 21:57:48.295 [main] INFO  c.e.dbtester.DBTesterApplication - === 데이터베이스 연결 테스터 시작 ===
-2025-06-04 21:57:48.295 [main] INFO  c.e.dbtester.DBTesterApplication - === 초기 연결 테스트 시작 ===
-2025-06-04 21:57:48.296 [main] INFO  c.e.dbtester.DBTesterApplication - 기본 데이터베이스 연결 테스트: postgresql
-2025-06-04 21:57:48.297 [main] INFO  c.e.dbtester.service.DatabaseService - === 데이터베이스 연결 테스트 시작: postgresql ===
-2025-06-04 21:57:48.305 [main] INFO  c.e.dbtester.service.DatabaseService - JDBC 드라이버 로드 성공: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
-2025-06-04 21:57:48.320 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2025-06-04 21:57:48.328 [main] ERROR c.e.dbtester.service.DatabaseService - 데이터베이스 연결 실패: PostgreSQL Database - Driver net.sf.log4jdbc.sql.jdbcapi.DriverSpy claims to not accept jdbcUrl, jdbc:log4jdbc:postgresql://localhost:5432/mydatabase
-2025-06-04 21:57:48.328 [main] WARN  c.e.dbtester.DBTesterApplication - 기본 데이터베이스 연결 실패: postgresql
-2025-06-04 21:57:48.328 [main] INFO  c.e.dbtester.DBTesterApplication - === 초기 연결 테스트 완료 ===
-2025-06-04 21:58:22.034 [main] INFO  c.e.dbtester.service.DatabaseService - === 데이터베이스 연결 테스트 시작: postgresql ===
-2025-06-04 21:58:22.036 [main] INFO  c.e.dbtester.service.DatabaseService - JDBC 드라이버 로드 성공: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
-2025-06-04 21:58:22.036 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
-2025-06-04 21:58:22.037 [main] ERROR c.e.dbtester.service.DatabaseService - 데이터베이스 연결 실패: PostgreSQL Database - Driver net.sf.log4jdbc.sql.jdbcapi.DriverSpy claims to not accept jdbcUrl, jdbc:log4jdbc:postgresql://localhost:5432/mydatabase
-2025-06-04 22:02:14.169 [main] INFO  c.e.dbtester.DBTesterApplication - Starting DBTesterApplication using Java 17.0.7 with PID 29860 (C:\03_sources\seoseungwoo10_srcs\database-connection-tester\target\classes started by kangchun in C:\03_sources\seoseungwoo10_srcs\database-connection-tester)
-2025-06-04 22:02:14.171 [main] DEBUG c.e.dbtester.DBTesterApplication - Running with Spring Boot v3.5.0, Spring v6.2.7
-2025-06-04 22:02:14.171 [main] INFO  c.e.dbtester.DBTesterApplication - No active profile set, falling back to 1 default profile: "default"
-2025-06-04 22:02:14.705 [main] INFO  c.e.dbtester.DBTesterApplication - Started DBTesterApplication in 1.217 seconds (process running for 1.962)
-2025-06-04 22:02:14.708 [main] INFO  c.e.dbtester.DBTesterApplication - === 데이터베이스 연결 테스터 시작 ===
-2025-06-04 22:02:14.708 [main] INFO  c.e.dbtester.DBTesterApplication - === 초기 연결 테스트 시작 ===
-2025-06-04 22:02:14.708 [main] INFO  c.e.dbtester.DBTesterApplication - 기본 데이터베이스 연결 테스트: postgresql
-2025-06-04 22:02:14.710 [main] INFO  c.e.dbtester.service.DatabaseService - === 데이터베이스 연결 테스트 시작: postgresql ===
-2025-06-04 22:02:14.716 [main] INFO  c.e.dbtester.service.DatabaseService - JDBC 드라이버 로드 성공: org.postgresql.Driver
-2025-06-04 22:02:14.725 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2025-06-04 22:02:14.730 [main] ERROR c.e.dbtester.service.DatabaseService - 데이터베이스 연결 실패: PostgreSQL Database - Driver net.sf.log4jdbc.sql.jdbcapi.DriverSpy claims to not accept jdbcUrl, jdbc:log4jdbc:postgresql://localhost:5432/mydatabase
-2025-06-04 22:02:14.731 [main] WARN  c.e.dbtester.DBTesterApplication - 기본 데이터베이스 연결 실패: postgresql
-2025-06-04 22:02:14.731 [main] INFO  c.e.dbtester.DBTesterApplication - === 초기 연결 테스트 완료 ===
-2025-06-04 22:07:22.533 [main] INFO  c.e.dbtester.DBTesterApplication - Starting DBTesterApplication using Java 17.0.7 with PID 30256 (C:\03_sources\seoseungwoo10_srcs\database-connection-tester\target\classes started by kangchun in C:\03_sources\seoseungwoo10_srcs\database-connection-tester)
-2025-06-04 22:07:22.534 [main] DEBUG c.e.dbtester.DBTesterApplication - Running with Spring Boot v3.5.0, Spring v6.2.7
-2025-06-04 22:07:22.534 [main] INFO  c.e.dbtester.DBTesterApplication - No active profile set, falling back to 1 default profile: "default"
-2025-06-04 22:07:23.106 [main] INFO  c.e.dbtester.DBTesterApplication - Started DBTesterApplication in 1.201 seconds (process running for 1.866)
-2025-06-04 22:07:23.109 [main] INFO  c.e.dbtester.DBTesterApplication - === 데이터베이스 연결 테스터 시작 ===
-2025-06-04 22:07:25.184 [main] INFO  c.e.dbtester.service.DatabaseService - === 데이터베이스 연결 테스트 시작: postgresql ===
-2025-06-04 22:07:25.194 [main] INFO  c.e.dbtester.service.DatabaseService - JDBC 드라이버 로드 성공: org.postgresql.Driver
-2025-06-04 22:07:25.205 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2025-06-04 22:07:25.212 [main] ERROR c.e.dbtester.service.DatabaseService - 데이터베이스 연결 실패: PostgreSQL Database - Driver net.sf.log4jdbc.sql.jdbcapi.DriverSpy claims to not accept jdbcUrl, jdbc:log4jdbc:postgresql://localhost:5432/mydatabase
-java.lang.RuntimeException: Driver net.sf.log4jdbc.sql.jdbcapi.DriverSpy claims to not accept jdbcUrl, jdbc:log4jdbc:postgresql://localhost:5432/mydatabase
+2025-06-11 21:15:38.943 [main] INFO  c.e.dbtester.DBTesterApplication - Starting DBTesterApplication using Java 17.0.7 with PID 20452 (C:\03_sources\seoseungwoo10_srcs\database-connection-tester\target\classes started by kangchun in C:\03_sources\seoseungwoo10_srcs\database-connection-tester)
+2025-06-11 21:15:38.947 [main] DEBUG c.e.dbtester.DBTesterApplication - Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-11 21:15:38.948 [main] INFO  c.e.dbtester.DBTesterApplication - No active profile set, falling back to 1 default profile: "default"
+2025-06-11 21:15:39.518 [main] INFO  c.e.dbtester.DBTesterApplication - Started DBTesterApplication in 1.227 seconds (process running for 2.291)
+2025-06-11 21:15:39.521 [main] INFO  c.e.dbtester.DBTesterApplication - === 데이터베이스 연결 테스터 시작 ===
+2025-06-11 21:15:43.975 [main] INFO  c.e.dbtester.service.DatabaseService - === 데이터베이스 연결 테스트 시작: mysql ===
+2025-06-11 21:15:43.989 [main] INFO  c.e.dbtester.service.DatabaseService - JDBC 드라이버 로드 성공: com.mysql.cj.jdbc.Driver
+2025-06-11 21:15:44.000 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-06-11 21:15:44.007 [main] ERROR c.e.dbtester.service.DatabaseService - 데이터베이스 연결 실패: MySQL Database - Driver net.sf.log4jdbc.sql.jdbcapi.DriverSpy claims to not accept jdbcUrl, jdbc:log4jdbc:mysql://localhost:3316/demodb?serverTimezone=UTC
+java.lang.RuntimeException: Driver net.sf.log4jdbc.sql.jdbcapi.DriverSpy claims to not accept jdbcUrl, jdbc:log4jdbc:mysql://localhost:3316/demodb?serverTimezone=UTC
 	at com.zaxxer.hikari.util.DriverDataSource.<init>(DriverDataSource.java:111)
 	at com.zaxxer.hikari.pool.PoolBase.initializeDataSource(PoolBase.java:331)
 	at com.zaxxer.hikari.pool.PoolBase.<init>(PoolBase.java:116)
 	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:94)
 	at com.zaxxer.hikari.HikariDataSource.<init>(HikariDataSource.java:80)
-	at com.example.dbtester.service.DatabaseService.createDataSource(DatabaseService.java:213)
-	at com.example.dbtester.service.DatabaseService.testConnection(DatabaseService.java:50)
+	at com.example.dbtester.service.DatabaseService.createDataSource(DatabaseService.java:193)
+	at com.example.dbtester.service.DatabaseService.testConnection(DatabaseService.java:49)
 	at com.example.dbtester.service.MenuService.handleConnectionTest(MenuService.java:79)
 	at com.example.dbtester.service.MenuService.showMainMenu(MenuService.java:36)
 	at com.example.dbtester.DBTesterApplication.run(DBTesterApplication.java:43)
@@ -68,22 +38,18 @@ java.lang.RuntimeException: Driver net.sf.log4jdbc.sql.jdbcapi.DriverSpy claims 
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1362)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1351)
 	at com.example.dbtester.DBTesterApplication.main(DBTesterApplication.java:32)
-2025-06-04 22:12:59.259 [main] INFO  c.e.dbtester.DBTesterApplication - Starting DBTesterApplication using Java 17.0.7 with PID 46384 (C:\03_sources\seoseungwoo10_srcs\database-connection-tester\target\classes started by kangchun in C:\03_sources\seoseungwoo10_srcs\database-connection-tester)
-2025-06-04 22:12:59.260 [main] DEBUG c.e.dbtester.DBTesterApplication - Running with Spring Boot v3.5.0, Spring v6.2.7
-2025-06-04 22:12:59.261 [main] INFO  c.e.dbtester.DBTesterApplication - No active profile set, falling back to 1 default profile: "default"
-2025-06-04 22:12:59.851 [main] INFO  c.e.dbtester.DBTesterApplication - Started DBTesterApplication in 1.231 seconds (process running for 1.945)
-2025-06-04 22:12:59.854 [main] INFO  c.e.dbtester.DBTesterApplication - === 데이터베이스 연결 테스터 시작 ===
-2025-06-04 22:13:02.324 [main] INFO  c.e.dbtester.service.DatabaseService - === 데이터베이스 연결 테스트 시작: postgresql ===
-2025-06-04 22:13:02.332 [main] INFO  c.e.dbtester.service.DatabaseService - JDBC 드라이버 로드 성공: org.postgresql.Driver
-2025-06-04 22:13:02.345 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2025-06-04 22:13:03.412 [main] ERROR c.e.dbtester.service.DatabaseService - 데이터베이스 연결 실패: PostgreSQL Database - Failed to initialize pool: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
-com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
-	at com.zaxxer.hikari.pool.HikariPool.throwPoolInitializationException(HikariPool.java:605)
-	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:592)
-	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:101)
+2025-06-11 21:16:18.769 [main] INFO  c.e.dbtester.service.DatabaseService - === 데이터베이스 연결 테스트 시작: mysql ===
+2025-06-11 21:16:31.659 [main] INFO  c.e.dbtester.service.DatabaseService - JDBC 드라이버 로드 성공: com.mysql.cj.jdbc.Driver
+2025-06-11 21:16:39.171 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2025-06-11 21:16:56.822 [main] ERROR c.e.dbtester.service.DatabaseService - 데이터베이스 연결 실패: MySQL Database - Driver net.sf.log4jdbc.sql.jdbcapi.DriverSpy claims to not accept jdbcUrl, jdbc:log4jdbc:mysql://localhost:3316/demodb?serverTimezone=UTC
+java.lang.RuntimeException: Driver net.sf.log4jdbc.sql.jdbcapi.DriverSpy claims to not accept jdbcUrl, jdbc:log4jdbc:mysql://localhost:3316/demodb?serverTimezone=UTC
+	at com.zaxxer.hikari.util.DriverDataSource.<init>(DriverDataSource.java:111)
+	at com.zaxxer.hikari.pool.PoolBase.initializeDataSource(PoolBase.java:331)
+	at com.zaxxer.hikari.pool.PoolBase.<init>(PoolBase.java:116)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:94)
 	at com.zaxxer.hikari.HikariDataSource.<init>(HikariDataSource.java:80)
-	at com.example.dbtester.service.DatabaseService.createDataSource(DatabaseService.java:213)
-	at com.example.dbtester.service.DatabaseService.testConnection(DatabaseService.java:50)
+	at com.example.dbtester.service.DatabaseService.createDataSource(DatabaseService.java:193)
+	at com.example.dbtester.service.DatabaseService.testConnection(DatabaseService.java:49)
 	at com.example.dbtester.service.MenuService.handleConnectionTest(MenuService.java:79)
 	at com.example.dbtester.service.MenuService.showMainMenu(MenuService.java:36)
 	at com.example.dbtester.DBTesterApplication.run(DBTesterApplication.java:43)
@@ -107,42 +73,23 @@ com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initial
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1362)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1351)
 	at com.example.dbtester.DBTesterApplication.main(DBTesterApplication.java:32)
-Caused by: org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
-	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:346)
-	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
-	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:273)
-	at org.postgresql.Driver.makeConnection(Driver.java:446)
-	at org.postgresql.Driver.connect(Driver.java:298)
-	at net.sf.log4jdbc.sql.jdbcapi.DriverSpy.connect(DriverSpy.java:401)
-	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:139)
-	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:368)
-	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:205)
-	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:483)
-	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:571)
-	... 27 common frames omitted
-Caused by: java.net.ConnectException: Connection refused: no further information
-	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
-	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
-	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
-	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
-	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
-	at java.base/java.net.Socket.connect(Socket.java:633)
-	at org.postgresql.core.PGStream.createSocket(PGStream.java:243)
-	at org.postgresql.core.PGStream.<init>(PGStream.java:98)
-	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:136)
-	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:262)
-	... 37 common frames omitted
-2025-06-04 22:17:58.648 [main] INFO  c.e.dbtester.DBTesterApplication - Starting DBTesterApplication using Java 17.0.7 with PID 47492 (C:\03_sources\seoseungwoo10_srcs\database-connection-tester\target\classes started by kangchun in C:\03_sources\seoseungwoo10_srcs\database-connection-tester)
-2025-06-04 22:17:58.649 [main] DEBUG c.e.dbtester.DBTesterApplication - Running with Spring Boot v3.5.0, Spring v6.2.7
-2025-06-04 22:17:58.650 [main] INFO  c.e.dbtester.DBTesterApplication - No active profile set, falling back to 1 default profile: "default"
-2025-06-04 22:17:59.227 [main] INFO  c.e.dbtester.DBTesterApplication - Started DBTesterApplication in 1.19 seconds (process running for 1.923)
-2025-06-04 22:17:59.230 [main] INFO  c.e.dbtester.DBTesterApplication - === 데이터베이스 연결 테스터 시작 ===
-2025-06-04 22:18:07.187 [main] INFO  c.e.dbtester.service.DatabaseService - === 데이터베이스 연결 테스트 시작: mysql ===
-2025-06-04 22:18:07.190 [main] ERROR c.e.dbtester.service.DatabaseService - JDBC 드라이버 JAR 파일을 찾을 수 없습니다: ./libs/mysql-connector-java-8.0.33.jar
-2025-06-04 22:18:07.190 [main] ERROR c.e.dbtester.service.DatabaseService - 데이터베이스 연결 실패: MySQL Database - JDBC 드라이버 JAR 파일을 찾을 수 없습니다: ./libs/mysql-connector-java-8.0.33.jar
-java.lang.RuntimeException: JDBC 드라이버 JAR 파일을 찾을 수 없습니다: ./libs/mysql-connector-java-8.0.33.jar
-	at com.example.dbtester.service.DatabaseService.createDataSource(DatabaseService.java:176)
-	at com.example.dbtester.service.DatabaseService.testConnection(DatabaseService.java:50)
+2025-06-11 21:21:10.822 [main] INFO  c.e.dbtester.DBTesterApplication - Starting DBTesterApplication using Java 17.0.7 with PID 44428 (C:\03_sources\seoseungwoo10_srcs\database-connection-tester\target\classes started by kangchun in C:\03_sources\seoseungwoo10_srcs\database-connection-tester)
+2025-06-11 21:21:10.824 [main] DEBUG c.e.dbtester.DBTesterApplication - Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-11 21:21:10.825 [main] INFO  c.e.dbtester.DBTesterApplication - No active profile set, falling back to 1 default profile: "default"
+2025-06-11 21:21:11.384 [main] INFO  c.e.dbtester.DBTesterApplication - Started DBTesterApplication in 1.276 seconds (process running for 2.091)
+2025-06-11 21:21:11.387 [main] INFO  c.e.dbtester.DBTesterApplication - === 데이터베이스 연결 테스터 시작 ===
+2025-06-11 21:21:25.505 [main] INFO  c.e.dbtester.service.DatabaseService - === 데이터베이스 연결 테스트 시작: mysql ===
+2025-06-11 21:21:30.401 [main] INFO  c.e.dbtester.service.DatabaseService - JDBC 드라이버 로드 성공: com.mysql.cj.jdbc.Driver
+2025-06-11 21:21:34.099 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-06-11 21:21:35.150 [main] ERROR c.e.dbtester.service.DatabaseService - 데이터베이스 연결 실패: MySQL Database - Driver net.sf.log4jdbc.sql.jdbcapi.DriverSpy claims to not accept jdbcUrl, jdbc:log4jdbc:mysql://localhost:3316/demodb?serverTimezone=UTC
+java.lang.RuntimeException: Driver net.sf.log4jdbc.sql.jdbcapi.DriverSpy claims to not accept jdbcUrl, jdbc:log4jdbc:mysql://localhost:3316/demodb?serverTimezone=UTC
+	at com.zaxxer.hikari.util.DriverDataSource.<init>(DriverDataSource.java:111)
+	at com.zaxxer.hikari.pool.PoolBase.initializeDataSource(PoolBase.java:331)
+	at com.zaxxer.hikari.pool.PoolBase.<init>(PoolBase.java:116)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:94)
+	at com.zaxxer.hikari.HikariDataSource.<init>(HikariDataSource.java:80)
+	at com.example.dbtester.service.DatabaseService.createDataSource(DatabaseService.java:193)
+	at com.example.dbtester.service.DatabaseService.testConnection(DatabaseService.java:49)
 	at com.example.dbtester.service.MenuService.handleConnectionTest(MenuService.java:79)
 	at com.example.dbtester.service.MenuService.showMainMenu(MenuService.java:36)
 	at com.example.dbtester.DBTesterApplication.run(DBTesterApplication.java:43)
@@ -166,35 +113,8 @@ java.lang.RuntimeException: JDBC 드라이버 JAR 파일을 찾을 수 없습니
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1362)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1351)
 	at com.example.dbtester.DBTesterApplication.main(DBTesterApplication.java:32)
-2025-06-04 22:21:28.764 [main] INFO  c.e.dbtester.DBTesterApplication - Starting DBTesterApplication using Java 17.0.7 with PID 16436 (C:\03_sources\seoseungwoo10_srcs\database-connection-tester\target\classes started by kangchun in C:\03_sources\seoseungwoo10_srcs\database-connection-tester)
-2025-06-04 22:21:28.765 [main] DEBUG c.e.dbtester.DBTesterApplication - Running with Spring Boot v3.5.0, Spring v6.2.7
-2025-06-04 22:21:28.766 [main] INFO  c.e.dbtester.DBTesterApplication - No active profile set, falling back to 1 default profile: "default"
-2025-06-04 22:21:29.357 [main] INFO  c.e.dbtester.DBTesterApplication - Started DBTesterApplication in 1.295 seconds (process running for 2.107)
-2025-06-04 22:21:29.360 [main] INFO  c.e.dbtester.DBTesterApplication - === 데이터베이스 연결 테스터 시작 ===
-2025-06-04 22:21:33.172 [main] INFO  c.e.dbtester.service.DatabaseService - === 데이터베이스 연결 테스트 시작: mysql ===
-2025-06-04 22:21:33.182 [main] INFO  c.e.dbtester.service.DatabaseService - JDBC 드라이버 로드 성공: com.mysql.cj.jdbc.Driver
-2025-06-04 22:21:33.196 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2025-06-04 22:21:33.567 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@66cd621b
-2025-06-04 22:21:33.569 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2025-06-04 22:21:33.571 [main] INFO  c.e.dbtester.service.DatabaseService - 데이터베이스 연결 성공: MySQL Database
-2025-06-04 22:21:33.598 [main] INFO  c.e.dbtester.service.DatabaseService - 테스트 쿼리 실행: SELECT VERSION() AS DBVersion
-2025-06-04 22:21:33.599 [main] INFO  c.e.dbtester.service.DatabaseService -   DBVersion: 8.0.42
-2025-06-04 22:21:33.600 [main] INFO  c.e.dbtester.service.DatabaseService - 데이터베이스 연결 테스트 완료: MySQL Database
-2025-06-04 22:21:33.603 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2025-06-04 22:21:33.607 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2025-06-04 22:31:41.443 [main] INFO  c.e.dbtester.DBTesterApplication - Starting DBTesterApplication using Java 17.0.7 with PID 45724 (C:\03_sources\seoseungwoo10_srcs\database-connection-tester\target\classes started by kangchun in C:\03_sources\seoseungwoo10_srcs\database-connection-tester)
-2025-06-04 22:31:41.445 [main] DEBUG c.e.dbtester.DBTesterApplication - Running with Spring Boot v3.5.0, Spring v6.2.7
-2025-06-04 22:31:41.445 [main] INFO  c.e.dbtester.DBTesterApplication - No active profile set, falling back to 1 default profile: "default"
-2025-06-04 22:31:41.999 [main] INFO  c.e.dbtester.DBTesterApplication - Started DBTesterApplication in 1.22 seconds (process running for 2.001)
-2025-06-04 22:31:42.002 [main] INFO  c.e.dbtester.DBTesterApplication - === 데이터베이스 연결 테스터 시작 ===
-2025-06-04 22:31:55.998 [main] INFO  c.e.dbtester.service.DatabaseService - === 데이터베이스 연결 테스트 시작: mysql ===
-2025-06-04 22:31:56.006 [main] INFO  c.e.dbtester.service.DatabaseService - JDBC 드라이버 로드 성공: com.mysql.cj.jdbc.Driver
-2025-06-04 22:31:56.021 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2025-06-04 22:31:56.334 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@7affc159
-2025-06-04 22:31:56.336 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2025-06-04 22:31:56.339 [main] INFO  c.e.dbtester.service.DatabaseService - 데이터베이스 연결 성공: MySQL Database
-2025-06-04 22:31:56.369 [main] INFO  c.e.dbtester.service.DatabaseService - 테스트 쿼리 실행: SELECT VERSION() AS DBVersion
-2025-06-04 22:31:56.371 [main] INFO  c.e.dbtester.service.DatabaseService -   DBVersion: 8.0.42
-2025-06-04 22:31:56.372 [main] INFO  c.e.dbtester.service.DatabaseService - 데이터베이스 연결 테스트 완료: MySQL Database
-2025-06-04 22:31:56.375 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2025-06-04 22:31:56.380 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-06-11 22:15:21.366 [main] INFO  c.e.dbtester.DBTesterApplication - Starting DBTesterApplication using Java 17.0.7 with PID 17924 (C:\03_sources\seoseungwoo10_srcs\database-connection-tester\target\classes started by kangchun in C:\03_sources\seoseungwoo10_srcs\database-connection-tester)
+2025-06-11 22:15:21.367 [main] DEBUG c.e.dbtester.DBTesterApplication - Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-11 22:15:21.369 [main] INFO  c.e.dbtester.DBTesterApplication - No active profile set, falling back to 1 default profile: "default"
+2025-06-11 22:15:21.913 [main] INFO  c.e.dbtester.DBTesterApplication - Started DBTesterApplication in 1.315 seconds (process running for 2.023)
+2025-06-11 22:15:21.917 [main] INFO  c.e.dbtester.DBTesterApplication - === 데이터베이스 연결 테스터 시작 ===

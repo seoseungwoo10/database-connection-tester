@@ -1,0 +1,75 @@
+spring:
+  application:
+    name: database-connection-tester
+  # Spring Boot DB 자동 설정을 비활성화합니다.
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+      - org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration
+
+# 데이터베이스 연결 설정
+database:
+  driver-path: "./libs"
+  default-database: mysql
+  connections:
+    mysql:
+      name: "MySQL Database"
+      driver-class-name: "net.sf.log4jdbc.sql.jdbcapi.DriverSpy"
+      original-class-name: com.mysql.cj.jdbc.Driver
+      jar-file: mysql-connector-java-8.0.21.jar
+      jdbc-url: "jdbc:log4jdbc:mysql://localhost:3316/demodb?serverTimezone=UTC"
+      username: "root"
+      password: "${MYSQL_DB_PASSWORD}"
+      test-query: "SELECT VERSION() AS DBVersion"
+
+    postgresql:
+      name: "PostgreSQL Database"
+      driver-class-name: "net.sf.log4jdbc.sql.jdbcapi.DriverSpy"
+      original-class-name: org.postgresql.Driver
+      jar-file: postgresql-42.7.3.jar
+      jdbc-url: "jdbc:log4jdbc:postgresql://localhost:5432/mydatabase"
+      username: "postgres"
+      password: "password"
+      test-query: "SELECT version() AS DBVersion"
+
+    mssql:
+      name: "MS SQL Server Database"
+      driver-class-name: "net.sf.log4jdbc.sql.jdbcapi.DriverSpy"
+      original-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+      jar-file: postgresql-42.7.3.jar
+      jdbc-url: "jdbc:log4jdbc:sqlserver://localhost:1433;databaseName=testdb"
+      username: "sa"
+      password: "password"
+      test-query: "SELECT @@VERSION AS DBVersion"
+
+    oracle:
+      name: "Oracle Database"
+      driver-class-name: "net.sf.log4jdbc.sql.jdbcapi.DriverSpy"
+      jar-file: postgresql-42.7.3.jar
+      original-class-name: oracle.jdbc.driver.OracleDriver
+      jdbc-url: "jdbc:log4jdbc:oracle:thin:@localhost:1521:xe"
+      username: "system"
+      password: "password"
+      test-query: "SELECT banner FROM v$version WHERE rownum = 1"
+
+    sqlite:
+      name: "SQLite Database"
+      driver-class-name: "net.sf.log4jdbc.sql.jdbcapi.DriverSpy"
+      jar-file: postgresql-42.7.3.jar
+      original-class-name: org.sqlite.JDBC
+      jdbc-url: "jdbc:log4jdbc:sqlite:./test.db"
+      username: ""
+      password: ""
+      test-query: "SELECT sqlite_version() AS DBVersion"
+
+
+# db logging 설정
+logging:
+  level:
+    com.example.dbtester: DEBUG
+    jdbc.sqltiming: INFO
+    jdbc.sqlonly: OFF
+    jdbc.audit: OFF
+    jdbc.resultset: OFF
+    jdbc.resultsettable: INFO
+    jdbc.connection: INFO
